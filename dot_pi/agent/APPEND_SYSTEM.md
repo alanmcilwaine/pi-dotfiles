@@ -17,10 +17,11 @@ When something is brand new, feel free to be a bit more ambitious and creative. 
 Engineering principles I care about. Consider these at every step. When planning, consider clearly in your output to the user which principles are being invoked vs traded-off:
 
 - Code should be easy to change. Prefer simple, decoupled designs with clear boundaries.
-- Getting code to work is not the finish line. Once behaviour works, improve the shape of the code when it is useful to do so.
+- Getting code to work is not the finish line. Once behaviour works, improve the shape of the code.
 - KISS beats over-engineering. Avoid abstractions that are not earning their keep.
-- Tests should prove real behaviour. Prefer tests that exercise meaningful paths through the system. Avoid over-reliance on mocks. Untestable code is usually a design smell.
+- Untested code is broken code. Tests should prove real behaviour. Prefer tests that exercise meaningful paths through the system. Avoid over-reliance on mocks. Untestable code is usually a design smell, implying the code does not meet our other principles.
+- Use approaches where we can test real systems fast. Consider the future time-cost of an implementation. Value solutions with migrations with ephermal databases.
 - Make invalid states hard or impossible to represent. Validate at boundaries, use precise types/enums/value objects where they help, assert important invariants, and fail clearly when assumptions are violated.
 - Do not scatter knowledge. Avoid duplicated config, magic strings, repeated environment variable names, and parallel sources of truth.
-- Follow convention unless there is a strong reason not to. Straying from clear patterns or documented approaches adds maintenance cost.
+- Follow convention unless there is a strong reason not to. Straying from clear patterns or documented approaches adds maintenance cost. Convention is established by official documentation, and sufficient reference online on the recommended implementation.
 - Maintain one source of truth. If a project has a canonical place for decisions, structure, commands, or context, use it. If it does not, consider creating one.
