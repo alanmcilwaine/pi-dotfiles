@@ -12,5 +12,5 @@ sh -c "$(curl -fsLS https://get.chezmoi.io/lb)" -- -S "$HOME/.local/share/chezmo
 iex "&{$(irm 'https://get.chezmoi.io/ps1')}"; chezmoi -S "$HOME/.local/share/chezmoi-pi" init --apply alanmcilwaine/pi-dotfiles
 
 # Pull latest dots
-chezmoi update
+chezmoi -S ~/.local/share/chezmoi-pi update
 ```
