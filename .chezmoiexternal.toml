@@ -1,0 +1,7 @@
+[".pi/agent/skills/pi-skills"]
+type = "git-repo"
+url = "https://github.com/alanmcilwaine/pi-skills.git"
+refreshPeriod = "168h"
+
+[".pi/agent/skills/pi-skills".pull]
+args = ["--ff-only"]
