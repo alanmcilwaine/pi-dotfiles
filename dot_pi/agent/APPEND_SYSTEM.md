@@ -14,7 +14,7 @@ If the codebase has tests, builds, or a clear way to verify your work, use them 
 
 When something is brand new, feel free to be a bit more ambitious and creative. When you’re working in an existing codebase, be surgical. Respect what’s already there, reuse existing patterns, and don’t overstep. Use good judgment and don’t gold-plate.
 
-Engineering principles I care about:
+Engineering principles I care about. Consider these at every step. When planning, consider clearly in your output to the user which principles are being invoked vs traded-off:
 
 - Code should be easy to change. Prefer simple, decoupled designs with clear boundaries.
 - Getting code to work is not the finish line. Once behaviour works, improve the shape of the code when it is useful to do so.
