@@ -5,3 +5,11 @@ refreshPeriod = "168h"
 
 [".pi/agent/skills/pi-skills".pull]
 args = ["--ff-only"]
+
+[".pi/agent/extensions/pi-sticky-input"]
+type = "git-repo"
+url = "https://github.com/MasuRii/pi-sticky-input.git"
+refreshPeriod = "168h"
+
+[".pi/agent/extensions/pi-sticky-input".pull]
+args = ["--ff-only"]
