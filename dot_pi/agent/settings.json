@@ -1,0 +1,17 @@
+{
+  "lastChangelogVersion": "0.80.10",
+  "defaultProvider": "kimi-coding",
+  "defaultModel": "k2p7",
+  "defaultThinkingLevel": "high",
+  "packages": [],
+  "hideThinkingBlock": false,
+  "compaction": {
+    "enabled": true
+  },
+  "theme": "gruvbox-material-dark-hard",
+  "retry": {
+    "enabled": true,
+    "maxRetries": 1000,
+    "baseDelayMs": 500
+  }
+}
